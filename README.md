@@ -61,6 +61,7 @@ $ docker run -d --rm --name influxdb --net=influxdb -p 8086:8086 \
     -e INFLUXDB_ADMIN_USER=admin -e INFLUXDB_ADMIN_PASSWORD=password \
     -e INFLUXDB_USER=cijug -e INFLUXDB_USER_PASSWORD=password \
     -e INFLUXDB_DB=cijug \
+    -v $PWD/influxdb:/var/lib/influxdb \
     influxdb
 ```
 
@@ -80,7 +81,7 @@ $ docker run -d --rm --name grafana --net=influxdb -p 3000:3000\
     grafana/grafana:5.1.0
 ```
 
-## Running all-the-things
+## Accessing all-the-things
 
 Now that you've done all of that you should have all of the following things running:
 
