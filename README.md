@@ -85,7 +85,9 @@ $ docker run -d --rm --name grafana --net=influxdb -p 3000:3000\
 
 Now that you've done all of that you should have all of the following things running:
 
-Example application: http://localhost:8081/hello/
+### Example deployed application
+
+URL: http://localhost:8081/hello/
 Jolokia: http://localhost:8081/jolokia
 Hawtio: http://localhost:8090/hawtio/
 Influxdb: http://localhost:8086/debug/vars (this might be meaningless, but you should see lots of output)
@@ -93,3 +95,10 @@ Chronograf: http://localhost:8888
 Grafana: http://localhost:3000
 
 And now that all of those are running if you have telegraf running we're pushing metrics into our database.
+
+### Example stand alone app
+URL: http://localhost:8082
+API Endopint: http://localhost:8082/api/greeting
+Slow API Endpoint: http://localhost:8082/api/slow-greeting
+Actuator metrics: http://localhost:8082/actuator/metrics/
+Health Endpoint: http://localhost:8082/actuator/health
