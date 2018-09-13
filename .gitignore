@@ -43,3 +43,6 @@ hs_err_pid*
 !/lib/*
 !/.idea/runConfigurations/*.xml
 /grafana/sessions/
+/influxdb/wal/
+/influxdb/data/
+/influxdb/meta/
